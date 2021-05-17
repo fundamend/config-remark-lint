@@ -1,6 +1,6 @@
 {
 	"name": "@fundamend/config-remark-lint",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"dependencies": {
 		"remark-lint": "^8.0.0",
 		"remark-lint-no-auto-link-without-protocol": "^2.0.0",
