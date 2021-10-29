@@ -7,5 +7,5 @@ const settings = {};
 
 module.exports = {
 	plugins: plugins,
-	settings: settings,
+	settings: settings
 };
