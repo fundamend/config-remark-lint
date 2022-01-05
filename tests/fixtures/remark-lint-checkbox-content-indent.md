@@ -1,0 +1,2 @@
+- [ ] Correctly indented checkbox content
+- [x] &#x20;Incorrectly indented checkbox content
