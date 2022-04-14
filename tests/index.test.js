@@ -4,7 +4,10 @@ import config from '../src/index.js';
 import fs from 'fs';
 
 const loadFixture = function (filename) {
-	return fs.readFileSync(`tests/fixtures/${filename}`, 'utf-8');
+	return fs.readFileSync(
+		new URL(`./fixtures/${filename}`, import.meta.url),
+		'utf-8'
+	);
 };
 
 let processor = remark().use(gfm).use(config);
@@ -967,7 +970,7 @@ describe('config-remark-lint', () => {
 		test('should fail on incorrect list marker style', () => {
 			const markdown = '* Incorrect\n' + '\n' + '+ Incorrect\n';
 			const result = processor.processSync(markdown);
-			expect(result.messages.length).toBe(1);
+			expect(result.messages.length).toBe(2);
 			expect(result.messages[0].ruleId).toEqual('unordered-list-marker-style');
 		});
 	});

@@ -129,8 +129,7 @@ const plugins = [
 	[tableCellPadding, 'padded'],
 	tablePipeAlignment,
 	tablePipes,
-	unorderedListMarkerStyle,
-
+	[unorderedListMarkerStyle, '-'],
 	noAutoLinkWihtoutProtocol
 ];
 const settings = {};
