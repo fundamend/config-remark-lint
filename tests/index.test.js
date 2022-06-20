@@ -1,3 +1,4 @@
+import { expect, describe, test } from 'vitest';
 import { remark } from 'remark';
 import gfm from 'remark-gfm';
 import config from '../src/index.js';
